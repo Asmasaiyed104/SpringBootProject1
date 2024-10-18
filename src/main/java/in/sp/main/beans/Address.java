@@ -1,5 +1,6 @@
 package in.sp.main.beans;
 
+<<<<<<< HEAD
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -14,6 +15,13 @@ public class Address
 	
 	@Value("123321")
 	private int pincode;
+=======
+public class Address 
+{
+	private int houseno;
+	private String city;
+	private String pincode;
+>>>>>>> b0ad5638330469f9f6d2438ec7da2d0cbc113ed7
 	
 	public int getHouseno() {
 		return houseno;
@@ -27,10 +35,17 @@ public class Address
 	public void setCity(String city) {
 		this.city = city;
 	}
+<<<<<<< HEAD
 	public int getPincode() {
 		return pincode;
 	}
 	public void setPincode(int pincode) {
+=======
+	public String getPincode() {
+		return pincode;
+	}
+	public void setPincode(String pincode) {
+>>>>>>> b0ad5638330469f9f6d2438ec7da2d0cbc113ed7
 		this.pincode = pincode;
 	}
 	

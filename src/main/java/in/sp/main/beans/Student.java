@@ -1,5 +1,6 @@
 package in.sp.main.beans;
 
+<<<<<<< HEAD
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -14,6 +15,12 @@ public class Student
 	private int rollno;
 	
 	@Autowired
+=======
+public class Student
+{
+	private String name;
+	private int rollno;
+>>>>>>> b0ad5638330469f9f6d2438ec7da2d0cbc113ed7
 	private Address address;
 	
 	public String getName() {
