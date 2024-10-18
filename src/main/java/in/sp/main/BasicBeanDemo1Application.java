@@ -7,17 +7,14 @@ import org.springframework.context.ApplicationContext;
 import in.sp.main.beans.Student;
 
 @SpringBootApplication
-public class BasicBeanDemo1Application
-{
-	public static void main(String[] args)
-	{
+public class BasicBeanDemo1Application {
+	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(BasicBeanDemo1Application.class, args);
-		
-<<<<<<< HEAD
-		Student std1 = (Student) context.getBean("student");
-=======
-		Student std1 = (Student) context.getBean("stdObj");
->>>>>>> b0ad5638330469f9f6d2438ec7da2d0cbc113ed7
+
+		// Choose the correct bean name
+		Student std1 = (Student) context.getBean("student");  // Use "student" or "stdObj" as appropriate
+		// Student std1 = (Student) context.getBean("stdObj"); // Uncomment this line if you want to use "stdObj"
+
 		std1.display();
 	}
 }
